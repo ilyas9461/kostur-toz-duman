@@ -1,0 +1,234 @@
+
+ROM used:   23976/32768 (73%)
+            23976/32768 (73%) including unused fragments
+
+            3.6 Average locations per line
+            10.1 Average locations per statement
+
+RAM used:   359/1536 (23%) at main() level
+            398/1536 (26%) worst case
+
+Stack used: 12 worst case (6 in main + 6 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  594   490  21  main_kostur.c
+  100     0   0  main_kostur.h
+ 1032     0   0  C:\Program Files (x86)\PICC\devices\18F45K22.h
+   44     8   0  timer.c
+   33     0   0  timer.h
+ 1352   359  15  C:\Program Files (x86)\PICC\drivers\stdlib.h
+   32     0   0  C:\Program Files (x86)\PICC\drivers\stddef.h
+  435   129   5  C:\Program Files (x86)\PICC\drivers\string.h
+   28     0   0  C:\Program Files (x86)\PICC\drivers\ctype.h
+  296     0   0  kostur_kart_tanimlar.h
+   68    39   2  hc595_spi.c
+   79    71   3  kostur_donanim_test.c
+   58     0   0  dfPlayer.h
+  235    44   2  flex_lcd.c
+  170    67   3  dfPlayer.c
+  852   480  20  top_sw_islemler.c
+  771   349  15  lcd_menu_islem.c
+   37     0   0  kostur_anim.h
+  478   338  14  kostur_anim.c
+----- -----
+ 6694  2374 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+0     42   0    1             @delay_ms1
+0     16   0    1             @PUTCHAR_BIU_1
+0     16   0    1             @PUTCHAR_BIU_2
+0     16   0    0     69  1.6  timer_kur
+0     42   0    0    128  2.5  Timer0_int
+0    246   1   11             @MULFF
+0     54   0    2             @ITOF
+0     92   0   14             @MUL3232
+0    116   0    4    101  3.8  rand
+0     70   0    5             @DIV1616
+0    218   0    5   1152  5.6  hc595_spi_24bit_yaz
+0     20   0    0             @const1069
+0     62   0    1    326  2.8  lcd_send_nibble
+0     60   0    3    235  3.8  lcd_send_byte
+0    182   0    2    380  4.7  lcd_init
+0     38   0    4    186  5.5  lcd_gotoxy
+0     90   0    1    280  3.6  lcd_putc
+0    164   0   20    873  5.3  sendCommand
+0     18   0    1     43  1.5  mp3_set_volume
+0     20   0    1     43  1.5  mp3_set_equalizer
+0     30   0    4     86  1.7  mp3_play_physical
+0     28   0    4     86  1.7  mp3_play
+0     16   0    0     33  1.3  mp3_stop
+0     52   0    1    160  4.8  mp3_list_kontrol
+0    298   1    2    562  6.5  mp3_rastgele
+0     28   0    0             @MEMSET
+0     14   0    0             @const1104
+0     32   0    2             @PSTRINGC_1082
+0     16   0    0             @const1109
+0     52   0    3             @PSTRINGCN_1082
+0     44   0    3             @DIV88
+0    160   0    2             @PRINTF_U_1082
+0    186   0    2    218  1.2  mp3_baslangic
+0     72   0    3    147  3.5  an_max_min_reset
+0     18   0    0             @const1156
+0    210   0    9             @PRINTF_LU_1082
+0   1018   2    5   3299  6.4  an_max_adc_oku
+0     18   0    0             @const1162
+0    212   0    8    831  9.3  sw1_1
+0    212   0    8    831  9.3  sw1_2
+0    212   0    8    831  9.3  sw1_3
+0    212   0    8    831  9.3  sw2_1
+0    212   0    8    831  9.3  sw2_2
+0    212   0    8    831  9.3  sw2_3
+0    100   0    0    302  4.6  sa_m1_1
+0    100   0    0    302  4.6  sa_m1_2
+0    100   0    0    302  4.6  sa_m2_1
+0    100   0    0    302  4.6  sa_m2_2
+0    384   1    1   2214  4.9  swSaAlgila
+0     88   0    1    233  2.5  sw_ses_oynat
+0    236   0    2    913  3.9  m_sure_hesapla
+0    378   1    4   1571  5.8  sw_motor_oynat
+0     12   0    0             @const1220
+0     10   0    0             @const1221
+0     12   0    0             @const1222
+0     10   0    0             @const1223
+0   1150   2    2   3259  6.9  lcdMenuIslem
+0     18   0    0             @const1236
+0     18   0    0             @const1237
+0     18   0    0             @const1238
+0     18   0    0             @const1239
+0     18   0    0             @const1240
+0     18   0    0             @const1241
+0     18   0    0             @const1242
+0     18   0    0             @const1243
+0     18   0    0             @const1244
+0     18   0    0             @const1245
+0     18   0    0             @const1246
+0     18   0    0             @const1247
+0     16   0    0             @const1248
+0     18   0    0             @const1249
+0     18   0    0             @const1250
+0     18   0    0             @const1251
+0     18   0    0             @const1252
+0     18   0    0             @const1253
+0     18   0    0             @const1254
+0     14   0    0             @const1255
+0    638   1    4   1173  8.5  sensOkumaSayisiAyar
+0     10   0    0             @const1258
+0     18   0    0             @const1259
+0     10   0    0             @const1260
+0     18   0    0             @const1261
+0     18   0    0             @const1262
+0     10   0    0             @const1263
+0    512   1    3    861  6.7  sesAyar
+0     10   0    0             @const1265
+0     18   0    0             @const1266
+0     10   0    0             @const1267
+0     18   0    0             @const1268
+0     18   0    0             @const1269
+0    504   1    3    831  6.7  jtnTLayar
+0     12   0    0             @const1271
+0     18   0    0             @const1272
+0     12   0    0             @const1273
+0     18   0    0             @const1274
+0     18   0    0             @const1275
+0    504   1    3    861  6.7  oyunSureAyar
+0     18   0    0             @const1277
+0     18   0    0             @const1278
+0     18   0    0             @const1279
+0     18   0    0             @const1280
+0     18   0    0             @const1281
+0   1452   3    9   3079  7.4  sensorKalibre
+0     18   0    0             @const1287
+0     14   0    0             @const1288
+0     12   0    0             @const1289
+0     16   0    0             @const1290
+0     68   0    5             @FTOSD
+0    148   0   13             @DIV3232
+0    482   1   13             @PRINTF_L32D_1082FPFPF
+0     12   0    0             @const1299
+0     16   0    0             @const1300
+0     12   0    0             @const1301
+0     12   0    0             @const1302
+0     12   0    0             @const1303
+0     12   0    0             @const1304
+0    616   1    5   1106  5.8  sensorTest
+0     18   0    0             @const1305
+0     18   0    0             @const1306
+0     12   0    0             @const1307
+0     16   0    0             @const1308
+0      4   0    0      5  1.0  motorKurulum
+0    292   1    2    577  6.1  resetIslemi
+0     18   0    0             @const1310
+0     18   0    0             @const1311
+0     18   0    0             @const1312
+0     18   0    0             @const1313
+0   1442   3    5   3562  8.1  jetonAtildiIslem
+0     18   0    0             @const1336
+0     18   0    0             @const1338
+0     16   0    0             @const1346
+0     18   0    0             @const1347
+0     16   0    0             @const1352
+0     18   0    0             @const1353
+0     10   0    0             @const1354
+0     28   0    0             @const1356
+0     28   0    0             @const1359
+0     26   0    0             @const1360
+0     18   0    0             @const1361
+0      8   0    0             @const1362
+0    122   0    3    393  5.4  p10_kosturAnim
+0     24   0    0             @const1364
+0    242   1    4    909  8.0  p10_TL_anim
+0     50   0    1     54  1.5  P10_baslangic
+0    558   1    1   3251  3.0  led_anim_bosta
+0    416   1    1   2203  3.0  ledAnimKarinca
+0    184   0    3    507  5.5  P10_animkosturSirket
+0     26   0    0             @const1375
+0   4790  10   24  18633 13.2  MAIN
+0     18   0    0             @const1386
+0     16   0    0             @const1387
+0     18   0    0             @const1388
+0     18   0    0             @const1389
+0    202   0   12             @PRINTF_L32U_1082
+0     12   0    0             @const1392
+0     34   0    2             @PSTRINGC_719
+0     18   0    0             @const1394
+0     18   0    0             @const1395
+0     12   0    0             @const1404
+0     12   0    0             @const1405
+0     66   0    4             @MUL321616
+0     12   0    0             @const1409
+0     18   0    0             @const1410
+0     18   0    0             @const1411
+0     18   0    0             @const1412
+0     18   0    0             @const1413
+0     42   0    0             @goto57073
+0     36   0    0    151  3.6  ISR_RB0
+0      8   0    0             @const1415
+0     46   0    2     72  2.4  delay_m_us
+0    518   1    1   3579  6.4  mtr1Mtr2IlkKonum
+0    372   1    0   1871  4.9  motorGeriLedAnim
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               55
+    Statements              2374
+    Comments                2175
+    Volume (V)              110082
+    Difficulty (D)          282.0
+    Effort to implement (E) 31037734
+    Time to implement (T)   478 hours, 59 minutes
+    Est Delivered Bugs (B)  33
+    Cyclomatic Complexity   253
+    Maintainability (MI)    54
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     4  0  
+00008-00162   348  0  
+00164-07FFE  23620  8792  
+
+
+

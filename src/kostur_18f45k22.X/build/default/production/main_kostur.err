@@ -1,0 +1,37 @@
+Compiling D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\main_kostur on 24-Ara-19 at 10:58
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\lcd_menu_islem.c:23:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\lcd_menu_islem.c:315:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\lcd_menu_islem.c:342:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\lcd_menu_islem.c:368:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\lcd_menu_islem.c:534:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\lcd_menu_islem.c:622:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\kostur_anim.c:297:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\kostur_anim.c:470:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\main_kostur.c:339:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\main_kostur.c:478:1:  Warning#225  Interrupt level changed  : NORMAL=>HIGH
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\main_kostur.c:555:1:  Warning#203  Condition always TRUE
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\main_kostur.c:593:1:  Warning#216  Interrupts disabled during call to prevent re-entrancy:  (@delay_ms1)
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\main_kostur.c:593:1:  Warning#216  Interrupts disabled during call to prevent re-entrancy:  (lcd_send_nibble)
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\main_kostur.c:593:1:  Warning#216  Interrupts disabled during call to prevent re-entrancy:  (lcd_send_byte)
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\main_kostur.c:593:1:  Warning#216  Interrupts disabled during call to prevent re-entrancy:  (lcd_putc)
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\main_kostur.c:593:1:  Warning#216  Interrupts disabled during call to prevent re-entrancy:  (@PSTRINGC_1082)
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\main_kostur.c:593:1:  Warning#216  Interrupts disabled during call to prevent re-entrancy:  (lcd_gotoxy)
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\timer.h:18:19:  Warning#202  Variable never used:   timer_m3_say
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\dfPlayer.c:102:8:  Warning#202  Variable never used:   k
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\top_sw_islemler.c:6:16:  Warning#202  Variable never used:   atKisnemesi_ilkSure
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\top_sw_islemler.c:7:16:  Warning#202  Variable never used:   atKosmasi_ilkSure
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\top_sw_islemler.c:8:16:  Warning#202  Variable never used:   motorSureBasla
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\top_sw_islemler.c:9:16:  Warning#202  Variable never used:   whooshSureBasla
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\top_sw_islemler.c:23:15:  Warning#202  Variable never used:   yeniPuan_o1
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\top_sw_islemler.c:24:15:  Warning#202  Variable never used:   yeniPuan_o2
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\top_sw_islemler.c:27:6:  Warning#202  Variable never used:   f_kisneme
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\top_sw_islemler.c:70:15:  Warning#202  Variable never used:   an_esik
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\top_sw_islemler.c:84:15:  Warning#202  Variable never used:   an_max_arttti_azaldi
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\top_sw_islemler.c:85:15:  Warning#202  Variable never used:   an_min_arttti_azaldi
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\lcd_menu_islem.c:279:16:  Warning#202  Variable never used:   sens
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\lcd_menu_islem.c:281:9:  Warning#202  Variable never used:   i
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\main_kostur.c:40:27:  Warning#202  Variable never used:   previousTick
+D:\EasyPICV6\CCS_PIC_C\proje_KosturKart\kod_MPLABX_ide\Kostur_05_NISAN_19\P10_yok\kostur_18f45k22.X\kostur_anim.c:5:16:  Warning#202  Variable never used:   p10puanSureBasla
+      Memory usage:   ROM=73%      RAM=23% - 26%
+      0 Errors,  33 Warnings.
+Build Successful.
