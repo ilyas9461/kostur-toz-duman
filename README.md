@@ -19,7 +19,7 @@
 
 ## Çalışma Şekli
 
-Makine çalıştırıldığında yarıştırılacak nesneler en soldadır. Oyunculara toplar verilir. Bu toplar gözlerden içeri sokularak nesneler hareket ettirilir. Sokulan göze göre nesnenin aldığı yol farklıdır. 3 tane gözden herhangi birine top sokulduğunda bir birim yol alınıyorsa, tek gözde bu yol mktarı üç birimdir. Nesne yol aldığı sırada top herhangi bir göze tekrar sokulursa yol miktarı öncekinin üstüne eklenir. En sağa ilk varan oyunu kazanır. Aynı zamanda oyun oynama süresi bitiminde de oyun biter bu durumda önde olan kazanır.
+Makine çalıştırıldığında yarıştırılacak nesneler en soldadır. Oyunculara toplar verilir. Bu toplar gözlerden içeri sokularak nesneler hareket ettirilir. Sokulan göze göre nesnenin aldığı yol farklıdır. Yan yana bulunan 3 tane gözden herhangi birine top sokulduğunda bir birim yol alınıyorsa, tek gözde bu yol mktarı üç birimdir. Nesne yol aldığı sırada top herhangi bir göze tekrar sokulursa yol miktarı öncekinin üstüne eklenir. En sağa ilk varan oyunu kazanır. Aynı zamanda oyun oynama süresi bitiminde de oyun biter bu durumda önde olan kazanır.
 
 <p  align="center">
     <img src="./pcb/kostur_pcb.png" width="90%" height="90%" border: 5px solid #555 >
@@ -35,7 +35,9 @@ Oyun, oyun müziği eşliğinde oynanır. Toplar her geçtiğinde göze göre ge
      <img src="./pcb/kostur_alici.png" width="80%" height="75%" border: 5px solid #555 >
 </p>
 
-Topların geçişi iki adet infrared alıcı-verici devresi tarafından algılanarak ana karta uygun sinyal seviyesi oluşturulmaktadır. Programlamada gerçek zamnanlı bir algoritma gerçekleştirilerek top algılandığı anda, motora yol verilmiş, her delik için ayrı geçiş müziği oynatılmış, ilgili delik aydınlatılmıştır. 
+Topların geçişi iki adet infrared alıcı-verici devresi tarafından algılanarak ana karta uygun sinyal seviyesi oluşturulmaktadır. Programlamada gerçek zamanlı bir algoritma gerçekleştirilerek top algılandığı anda, motora yol verilmiş, her delik için ayrı geçiş müziği oynatılmış, ilgili delik aydınlatılmıştır. 
+
+Veriler analog olarak okunup kalibre edilerek, infrared ledlerin güneş ışığına ve top rengine karşı olan hassasiyeti azaltılmış ve geliştirlen algortima ile geçiş algılaması artırılmıştır.
 
 Sensör çalışma videosu ...
 [![](https://camo.githubusercontent.com/241d4106ff5edca2ee25e04dcf4546fad9d20b626f7a10990307e8f83e95459f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f796f75747562652d2532334646303030302e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d796f7574756265266c6f676f436f6c6f723d7768697465253232)](https://youtu.be/8aHo4yhkyYs)
