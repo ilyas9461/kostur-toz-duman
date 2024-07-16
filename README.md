@@ -37,7 +37,7 @@ The passage of the balls is detected by two infrared transceiver circuits and th
 By reading and calibrating the data analogously, the sensitivity of infrared LEDs to sunlight and ball colour was reduced, and transition detection was increased with the developed algorithm.
 
 Sensor working video...
-<a href="https://www.youtube.com/watch?v=0rQU3r0k7vE" target="_blank">
+<a href="https://www.youtube.com/watch?v=8aHo4yhkyYs" target="_blank">
      <img src="./img/youtube.png" alt="youtube" width="55">
 </a>
 
@@ -56,7 +56,7 @@ Sensor working video...
 
 ## Sample working video :
 
-<a href="https://www.youtube.com/watch?v=0rQU3r0k7vE" target="_blank">
+<a href="https://www.youtube.com/watch?v=SfRwXPxYxrk" target="_blank">
      <img src="./img/youtube.png" alt="youtube" width="55">
 </a>
 
