@@ -1,33 +1,30 @@
-<h1 align="center">Koştur/Toz Duman/Araba Yarışı Oyun Makinesi </h1>
+<h1 align="center">Koştur/Toz Duman/Car Racing Game Machine</h1>
 
+## Contents
+- [Overview](#Overview)
+- [How it works?](#How-it-works)
+- [Used technologies](#Used-technologies)
 
-## İçerik
-
-- [Giriş](#Giriş)
-- [Çalışma Şekli](#Çalışma-Şekli)
-- [Kullanılan Teknolojiler](#Kullanılan-Teknolojiler)
-- [İletişim](#İletişim)
-
-## Giriş
+## Overview
 
 <p  align="center">
     <img src="./img/kostur_toz_duman3.png" width="70%" height="70%" border: 5px solid #555 >
 </p>
 
- Bu oyun makinesi iki kişi tarafından oynanır. Sol tarafta 6 ve sağ tarafta 6 olmak üzere 12 tane göz bulunmaktadır. Oyuncuların karşısında her bir oyuncuyu ait makineye göre at, tavşan yada kaplumbağa veya araba bulunmaktadır. Oyun, oyuncuların karşısında atlar varsa at yarışı, tavşan ve kaplumbağa varsa toz-duman, arabalar varsa araba yarışı şeklinde oynanır ve makineye bu şekilde isim verilir. 
+This game machine is played by two people. There are 12 eyes, 6 on the left side and 6 on the right side. In front of the players is a horse, rabbit, turtle or car, depending on the machine belonging to each player. The game is played as horse racing if there are horses in front of the players, as dust and smoke if there are rabbits and turtles, and as car racing, if there are cars, and the name of the machine is given in this way.
  
 
-## Çalışma Şekli
+## How it works?
 
-Makine çalıştırıldığında yarıştırılacak nesneler en soldadır. Oyunculara toplar verilir. Bu toplar gözlerden içeri sokularak nesneler hareket ettirilir. Sokulan göze göre nesnenin aldığı yol farklıdır. Yan yana bulunan 3 tane gözden herhangi birine top sokulduğunda bir birim yol alınıyorsa, tek gözde bu yol mktarı üç birimdir. Nesne yol aldığı sırada top herhangi bir göze tekrar sokulursa yol miktarı öncekinin üstüne eklenir. En sağa ilk varan oyunu kazanır. Aynı zamanda oyun oynama süresi bitiminde de oyun biter bu durumda önde olan kazanır.
+When the machine is started, the objects to be raced are on the far left. Balls are given to the players. Objects are moved by inserting these balls into the eyes. The path taken by the object is different depending on the eye that is inserted. If a ball travels one unit when inserted into any of the three adjacent eyes, the distance travelled in one eye is three units. If the ball is put into either eye again while the object is travelling, the amount of travel is added to the previous one. The first one to the far right wins the game. At the same time, the game ends at the end of the playing time, in which case the person ahead wins.
 
 <p  align="center">
     <img src="./pcb/kostur_pcb.png" width="90%" height="90%" border: 5px solid #555 >
 </p
 
-Oyun makinesinin bütün fonksiyonları mikrodenetleyici tabanlı bir ana kart ile kontrol edilmektedir. Oyun süresi, çalışması için gerekli olan jeton miktarı vb. ayarlar kart üzerindeki LCD den yapılmaktadır.
+All functions of the game machine are controlled by a microcontroller-based main board. Game duration, amount of coins required for its operation, etc. Settings are made from the LCD on the card.
 
-Oyun, oyun müziği eşliğinde oynanır. Toplar her geçtiğinde göze göre geçiş müziği çalar.
+The game is played with game music. Each time the balls pass, transition music plays according to the eye.
 
 <br>
 <p  align="center">
@@ -35,33 +32,37 @@ Oyun, oyun müziği eşliğinde oynanır. Toplar her geçtiğinde göze göre ge
      <img src="./pcb/kostur_alici.png" width="80%" height="75%" border: 5px solid #555 >
 </p>
 
-Topların geçişi iki adet infrared alıcı-verici devresi tarafından algılanarak ana karta uygun sinyal seviyesi oluşturulmaktadır. Programlamada gerçek zamanlı bir algoritma gerçekleştirilerek top algılandığı anda, motora yol verilmiş, her delik için ayrı geçiş müziği oynatılmış, ilgili delik aydınlatılmıştır. 
+The passage of the balls is detected by two infrared transceiver circuits and the appropriate signal level is created for the main board. A real-time algorithm was implemented in the programming, and as soon as the ball was detected, the engine was started, a separate transition music was played for each hole, and the relevant hole was illuminated.
 
-Veriler analog olarak okunup kalibre edilerek, infrared ledlerin güneş ışığına ve top rengine karşı olan hassasiyeti azaltılmış ve geliştirlen algortima ile geçiş algılaması artırılmıştır.
+By reading and calibrating the data analogously, the sensitivity of infrared LEDs to sunlight and ball colour was reduced, and transition detection was increased with the developed algorithm.
 
-Sensör çalışma videosu ...
-[![](https://camo.githubusercontent.com/241d4106ff5edca2ee25e04dcf4546fad9d20b626f7a10990307e8f83e95459f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f796f75747562652d2532334646303030302e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d796f7574756265266c6f676f436f6c6f723d7768697465253232)](https://youtu.be/8aHo4yhkyYs)
+Sensor working video...
+<a href="https://www.youtube.com/watch?v=0rQU3r0k7vE" target="_blank">
+     <img src="./img/youtube.png" alt="youtube" width="55">
+</a>
 
 
-## Kullanılan Teknolojiler
+## Used technologies
 
 ```bash
-- PIC18F45K22 mikrodenetleyici.
-- CCS PIC C Derleyici
-- Infrared Hareket algılama.
-- Motor yön kontrolü.
-- PCB devre şeması çizme ve oluşturma.
+- PIC18F45K22 MCU.
+- CCS PIC C Compiler
+- Infrared movement detect.
+- Motor drivers.
+- Proteus PCB design.
+- MP3 player
 
 ```
 
-## Örnek çalışma videosu :
+## Sample working video :
 
-[![](https://camo.githubusercontent.com/241d4106ff5edca2ee25e04dcf4546fad9d20b626f7a10990307e8f83e95459f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f796f75747562652d2532334646303030302e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d796f7574756265266c6f676f436f6c6f723d7768697465253232)](https://youtu.be/SfRwXPxYxrk)
+<a href="https://www.youtube.com/watch?v=0rQU3r0k7vE" target="_blank">
+     <img src="./img/youtube.png" alt="youtube" width="55">
+</a>
 
-## İletişim
 
 - GitHub [@your-ilyas9461](https://github.com/ilyas9461)
 - Linkedin [@your-linkedin](https://www.linkedin.com/in/ilyas-yağcioğlu-6a6b17217)
 
-### *** Not : 
-Devre endüstriyel olarak üretimde olduğu için PCB devre şemaları paylaşılmamıştır.
+### *** Note : 
+Since the circuit is in industrial production, PCB circuit diagrams are not shared.
